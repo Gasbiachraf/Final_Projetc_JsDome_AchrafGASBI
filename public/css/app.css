@@ -11911,4 +11911,9 @@ textarea.form-control-lg {
   scale: 1.1;
 }
 
+.section4 .menuBotton:focus {
+  color: red;
+  border-color: red !important;
+}
+
 /*# sourceMappingURL=app.css.map */
