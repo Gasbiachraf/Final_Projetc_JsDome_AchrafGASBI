@@ -11916,4 +11916,24 @@ textarea.form-control-lg {
   border-color: red !important;
 }
 
+.section8Child {
+  width: 90vw;
+}
+.section8Child img {
+  width: 30%;
+}
+.section8Child div {
+  width: 90%;
+  padding-bottom: 7%;
+  padding-top: 7%;
+}
+.section8Child div input {
+  width: 25%;
+  height: 14%;
+}
+.section8Child div textarea {
+  width: 88%;
+  height: 28%;
+}
+
 /*# sourceMappingURL=app.css.map */
