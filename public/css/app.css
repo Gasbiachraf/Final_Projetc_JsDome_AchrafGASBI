@@ -11911,6 +11911,23 @@ textarea.form-control-lg {
   scale: 1.1;
 }
 
+.sectionBgImg {
+  background-image: url(../images/stats-bg.jpg);
+  background-size: cover;
+  width: 100vw;
+  z-index: -2;
+  position: relative;
+  background-attachment: fixed;
+}
+.sectionBgImg::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  inset: 0;
+  opacity: 30%;
+  z-index: -1;
+}
+
 .section4 .menuBotton:focus {
   color: red;
   border-color: red !important;

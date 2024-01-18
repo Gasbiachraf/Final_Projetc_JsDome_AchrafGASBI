@@ -6,9 +6,9 @@
 .section1
     div
         img
-            width: 36vw   
+            width: 36vw
         .img-button
-            width: 35px    
+            width: 35px
 
 // section2 :
 
@@ -24,13 +24,12 @@
             height: 85vh
             .section2BgImageChild
                 bottom: 10%
-        .sectionChild12 
+        .sectionChild12
             width: 50%
             img
                 width: 100%
                 height: 39.5vh
-                
-            
+
 // section 3   
 .section3
     width: 92vw
@@ -40,27 +39,41 @@
     .section3Child2-hover
         transition: 300ms
         &:hover
-                scale: 1.1
+            scale: 1.1
 
+// sectionBgImg 
+.sectionBgImg
+    background-image: url(../images/stats-bg.jpg)
+    background-size: cover
+    width: 100vw
+    z-index: -2
+    position: relative
+    background-attachment: fixed
+    &::after
+            content: ''
+            position: absolute
+            background-color: black
+            inset: 0
+            opacity: 30%
+            z-index: -1
 // section 4               
-.section4  
+.section4
     .menuBotton
         &:focus
-            color: red  
-            border-color: red   !important
+            color: red
+            border-color: red !important
 // section 8   
 .section8Child
-    width: 90vw    
+    width: 90vw
     img
-        width: 30%   
+        width: 30%
     div
         width: 90%
         padding-bottom: 7%
         padding-top: 7%
         input
-           width: 25%
-           height: 14%   
+            width: 25%
+            height: 14%
         textarea
-            width: 88%   
-            height: 28%        
-
+            width: 88%
+            height: 28%
