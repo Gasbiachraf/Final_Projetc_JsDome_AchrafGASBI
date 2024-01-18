@@ -11884,7 +11884,7 @@ textarea.form-control-lg {
   background-image: url(../images/about.jpg);
   background-size: cover;
   width: 80%;
-  height: 85vh;
+  height: 100%;
 }
 .section2 .sectionChild .section2BgImage .section2BgImageChild {
   bottom: 10%;
@@ -11931,6 +11931,45 @@ textarea.form-control-lg {
 .section4 .menuBotton:focus {
   color: red;
   border-color: red !important;
+}
+
+.section81Child1 {
+  background-image: url(../images/chefs/chefs-1.jpg);
+  width: 100%;
+  height: 96%;
+  background-size: cover;
+}
+
+.widthhover {
+  width: fit-content;
+  transition: 200ms;
+  left: 100% !important;
+  opacity: 55% !important;
+}
+
+.section81Child2 {
+  background-image: url(../images/chefs/chefs-2.jpg);
+  width: 100%;
+  height: 96%;
+  background-size: cover;
+}
+
+.section81Child3 {
+  background-image: url(../images/chefs/chefs-3.jpg);
+  width: 100%;
+  height: 96%;
+  background-size: cover;
+}
+
+.card {
+  transition: 500ms;
+  overflow: hidden;
+}
+.card:hover {
+  scale: 1.1;
+}
+.card:hover .widthhover {
+  left: 86% !important;
 }
 
 .section8Child {

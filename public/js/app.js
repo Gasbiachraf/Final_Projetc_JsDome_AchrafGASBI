@@ -17,3 +17,18 @@ menuBotton.forEach(element => {
         button[elementId].classList.remove('d-none')
     })
 });
+
+// ^ button navbar Sign up and Log in :
+
+let buttonsignUp = document.querySelectorAll('.signUp')
+let signUP = document.querySelector('.signUP')
+let logIn = document.querySelector('.logIn')
+let signUpLogIn = [signUP , logIn]
+buttonsignUp.forEach(element => {
+    element.addEventListener('click' , ()=>{
+        signUP.classList.add('d-none')
+        logIn.classList.add('d-none')
+        signUpLogIn[element.id].classList.remove('d-none')
+        
+    })
+});
