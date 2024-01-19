@@ -11885,11 +11885,48 @@ textarea.form-control-lg {
   padding: 0%;
 }
 
+.body {
+  overflow: hidden;
+}
+
 .section1 div img {
   width: 36vw;
 }
 .section1 div .img-button {
   width: 35px;
+}
+
+#divVideo {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(28, 11, 11, 0.4823529412);
+  position: fixed;
+}
+
+.sectionVideo {
+  width: 80%;
+  height: 80vh;
+  background-color: black;
+  z-index: 6;
+}
+
+#divVideo2 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(28, 11, 11, 0.4823529412);
+  position: fixed;
+  z-index: 30;
+}
+
+.sectionVideo2 {
+  width: 80%;
+  height: 80vh;
+  background-color: black;
+  z-index: 8;
 }
 
 .section2 {
@@ -11911,9 +11948,36 @@ textarea.form-control-lg {
 .section2 .sectionChild .sectionChild12 {
   width: 50%;
 }
-.section2 .sectionChild .sectionChild12 img {
+.section2 .sectionChild .sectionChild12 .section2Img {
+  background-image: url(../images/about-2.jpg);
+  background-size: cover;
   width: 100%;
   height: 39.5vh;
+}
+.section2 .sectionChild .sectionChild12 .section2Img .section2ButtonImg {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: linear-gradient(30deg, rgb(210, 23, 23) 20%, rgb(255, 47, 0) 80%);
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse;
+  align-items: center;
+  border: 0;
+}
+.section2 .sectionChild .sectionChild12 .section2Img .section2ButtonImg:hover {
+  transform: scale(1.2);
+}
+.section2 .sectionChild .sectionChild12 .section2Img .section2ButtonImg:focus {
+  transform: scale(1.2);
+}
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 45px rgba(193, 244, 246, 0);
+  }
 }
 
 .section3 {
@@ -12057,6 +12121,7 @@ textarea.form-control-lg {
     width: 100% !important;
     height: 100vh !important;
     margin-bottom: 5%;
+    z-index: -1 !important;
   }
   .section2 .sectionChild .section2BgImage .section2BgImageChild {
     bottom: 10%;

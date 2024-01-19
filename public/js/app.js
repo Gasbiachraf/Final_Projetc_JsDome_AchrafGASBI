@@ -1,4 +1,33 @@
 
+//^ video section 1
+let sectionVideo = document.querySelectorAll('.section1Video')
+let divVideo = document.querySelector('#divVideo')
+let boddy = document.querySelector('body')
+
+
+sectionVideo.forEach(element => {
+    element.addEventListener('click' ,()=>{
+        divVideo.classList.toggle('d-none')
+        boddy.classList.toggle('body')
+        
+    })
+});
+
+//^ video section 
+let sectionVideo2 = document.querySelectorAll('.section1Video2')
+let divVideo2 = document.querySelector('#divVideo2')
+let boddy2 = document.querySelector('body')
+
+
+sectionVideo2.forEach(element => {
+    element.addEventListener('click' ,()=>{
+        divVideo2.classList.toggle('d-none')
+        
+        
+    })
+});
+
+
 //^ section 4
 let menuBotton = document.querySelectorAll('.menuBotton') ;
 let starters =document.querySelector('.starters')

@@ -2,6 +2,9 @@
     margin: 0%
     padding: 0%
 
+.body
+    overflow: hidden
+
 // section 1 :
 .section1
     div
@@ -9,6 +12,33 @@
             width: 36vw
         .img-button
             width: 35px
+#divVideo
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: #1c0b0b7b
+    position: fixed
+
+.sectionVideo
+    width: 80%
+    height: 80vh
+    background-color: black
+    z-index: 6
+#divVideo2
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: #1c0b0b7b
+    position: fixed
+    z-index: 30
+
+.sectionVideo2
+    width: 80%
+    height: 80vh
+    background-color: black
+    z-index: 8
 
 // section2 :
 
@@ -26,9 +56,33 @@
                 bottom: 10%
         .sectionChild12
             width: 50%
-            img
+            .section2Img
+                background-image: url(../images/about-2.jpg)
+                background-size: cover
                 width: 100%
                 height: 39.5vh
+                .section2ButtonImg
+                    display: flex
+                    justify-content: center
+                    color: #fff
+                    width: 80px
+                    height: 80px
+                    border-radius: 100%
+                    background: linear-gradient(30deg, rgb(210, 23, 23) 20%, rgb(255, 47, 0) 80%)
+                    transition: all 0.3s ease-in-out 0s
+                    box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px
+                    animation: 1.2s cubic-bezier(0.8, 0, 0, 1) 0s infinite normal none running pulse
+                    align-items: center
+                    border: 0
+                .section2ButtonImg
+                    &:hover
+                        transform: scale(1.2)
+                .section2ButtonImg
+                    &:focus
+                        transform: scale(1.2)
+                @keyframes pulse
+                    100%
+                        box-shadow: 0 0 0 45px rgba(193,244,246,0)
 
 // section 3   
 .section3
@@ -64,8 +118,8 @@
             border-color: red !important
 // section 6
 .boderImgCarousel
-        border: solid 3px white  
-        border-radius: 100%  
+    border: solid 3px white
+    border-radius: 100%
 // section 81
 .section81Child1
     background-image: url(../images/chefs/chefs-1.jpg)
@@ -114,7 +168,6 @@
     width: 85%
 .section11Child1
     width: 49.3%
-     
 
 @media  ( max-width: 425px )
     .section1Child
@@ -123,7 +176,7 @@
         align-items: center
         flex-direction: column-reverse !important
         text-align: center
-        
+
         div
             display: flex
             justify-content: center
@@ -134,7 +187,7 @@
                 padding-bottom: 10%
                 padding-top: 10%
         h3 , p 
-            width: 100% !important
+                width: 100% !important
     // section2 :
 
     .section2
@@ -148,6 +201,7 @@
                 width: 100% !important
                 height: 100vh !important
                 margin-bottom: 5%
+                z-index: -1 !important
                 .section2BgImageChild
                     bottom: 10%
 
@@ -165,16 +219,16 @@
     // sectionBgImg 
     .sectionBgImg
         background-image: url(../images/stats-bg.jpg)
-        background-size: cover 
-        width: 100% 
-        height: 100% 
+        background-size: cover
+        width: 100%
+        height: 100%
         b
             font-size: 40px !important
             padding-top: 5%
     //  section4
     .section4
         .widthmenu
-            width: 100% !important 
+            width: 100% !important
     // section6 
     // section8
     .section8Child
@@ -186,7 +240,7 @@
         width: 100% !important
         .section9input
             width: 90% !important
-            
+
             margin-top: 10px
             border: 2px black solid !important
             border-radius: 2% !important
@@ -194,10 +248,4 @@
     .section11
         width: 90% !important
     .section11Child1
-        width: 100% !important       
-
-    
-  
-       
-     
-
+        width: 100% !important
