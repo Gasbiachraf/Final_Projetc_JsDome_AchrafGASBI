@@ -11861,6 +11861,25 @@ textarea.form-control-lg {
   margin: 0;
 }
 
+.navbar-nav .nav-item {
+  position: relative;
+}
+.navbar-nav .nav-item::after {
+  content: "";
+  border-bottom: 3px solid #ec0707;
+  width: 0%;
+  position: absolute;
+  left: 0;
+  top: 6.5vh;
+  transition: 600ms;
+}
+.navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ec0707;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -11933,6 +11952,11 @@ textarea.form-control-lg {
   border-color: red !important;
 }
 
+.boderImgCarousel {
+  border: solid 3px white;
+  border-radius: 100%;
+}
+
 .section81Child1 {
   background-image: url(../images/chefs/chefs-1.jpg);
   width: 100%;
@@ -11998,6 +12022,90 @@ textarea.form-control-lg {
 
 .section11Child1 {
   width: 49.3%;
+}
+
+@media (max-width: 425px) {
+  .section1Child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse !important;
+    text-align: center;
+  }
+  .section1Child div {
+    display: flex;
+    justify-content: center;
+  }
+  .section1Child div img {
+    width: 70vw;
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+  .section1Child h3, .section1Child .h3, .section1Child p {
+    width: 100% !important;
+  }
+  .section2 {
+    width: 92vw;
+  }
+  .section2 .sectionChild {
+    width: 100% !important;
+    height: fit-content !important;
+  }
+  .section2 .sectionChild .section2BgImage {
+    background-image: url(../images/about.jpg);
+    background-size: cover;
+    width: 100% !important;
+    height: 100vh !important;
+    margin-bottom: 5%;
+  }
+  .section2 .sectionChild .section2BgImage .section2BgImageChild {
+    bottom: 10%;
+  }
+  .section2 .sectionChild .sectionChild12 {
+    width: 100% !important;
+  }
+  .section3 {
+    width: 92vw;
+  }
+  .section3 .section3Child1 {
+    background-color: red;
+    width: 100%;
+  }
+  .sectionBgImg {
+    background-image: url(../images/stats-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .sectionBgImg b {
+    font-size: 40px !important;
+    padding-top: 5%;
+  }
+  .section4 .widthmenu {
+    width: 100% !important;
+  }
+  .section8Child {
+    width: 100% !important;
+  }
+  .section8Child img {
+    width: 100% !important;
+  }
+  .section9inputGrp {
+    display: flex !important;
+    width: 100% !important;
+  }
+  .section9inputGrp .section9input {
+    width: 90% !important;
+    margin-top: 10px;
+    border: 2px black solid !important;
+    border-radius: 2% !important;
+  }
+  .section11 {
+    width: 90% !important;
+  }
+  .section11Child1 {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
