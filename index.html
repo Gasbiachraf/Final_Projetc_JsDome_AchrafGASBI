@@ -25,16 +25,16 @@
                             <a class="nav-link active " aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-lg-3" href="#">About</a>
+                            <a class="nav-link px-lg-3" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-lg-3" href="#">Menu</a>
+                            <a class="nav-link px-lg-3" href="#menu">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-lg-3" href="#">Events</a>
+                            <a class="nav-link px-lg-3" href="#events">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-lg-3" href="#">chefs</a>
+                            <a class="nav-link px-lg-3" href="#chefs">chefs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-lg-3" href="#">gallery</a>
@@ -45,7 +45,7 @@
                             </select>
                         </li>
                         <li class="nav-item px-lg-3">
-                            <a class="nav-link" href="#">contact</a>
+                            <a class="nav-link" href="#contact">contact</a>
                         </li>
                     </ul>
                     <span class="navbar-text">
@@ -123,7 +123,8 @@
         <!-- ************************ -->
         <div id="divVideo" class="d-flex justify-content-center align-items-center d-none">
             <div class="d-flex sectionVideo position-fixed ">
-                <button class="section1Video position-fixed end-0  p-2 bg-transparent fs-3 me-lg-5 rounded-2 border border-dark">X</button>
+                <button
+                    class="section1Video position-fixed end-0  p-2 bg-transparent fs-3 me-lg-5 rounded-2 border border-dark">X</button>
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-D966SNkJmo?si=Ys9d4vKjGy6Q6VD_"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -136,7 +137,8 @@
 
         <div id="divVideo2" class="d-flex justify-content-center align-items-center d-none">
             <div class="d-flex sectionVideo2 position-fixed ">
-                <button class="section1Video2 position-fixed end-0  p-2 bg-transparent fs-3 me-lg-5 rounded-2 border border-dark ">X</button>
+                <button
+                    class="section1Video2 position-fixed end-0  p-2 bg-transparent fs-3 me-lg-5 rounded-2 border border-dark ">X</button>
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/vy06E0Y-YxA?si=-3gYaKSZREcfjlVH"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -152,8 +154,8 @@
         <section class="section1">
             <div class="section1Child d-flex flex-column flex-lg-row p-lg-5 bg-body-secondary">
                 <div class="w-100 d-flex flex-column justify-content-center ">
-                    <h3 class="w-75 fs-1">ENJNOY YOUR HEALTHY DELICIOUS FOOD</h3>
-                    <P class="w-75 pt-3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at
+                    <h3 class="w-50 fs-1 fonttime">ENJNOY YOUR HEALTHY DELICIOUS FOOD</h3>
+                    <P class="w-75 pt-3 pb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at
                         voluptatibus natus delectus
                         fuga sit.
                     </P>
@@ -175,10 +177,10 @@
 
         </section>
         <!-- * section 2 -->
-        <section class="d-flex   justify-content-center pb-5">
+        <section id="about" class="d-flex   justify-content-center pb-5">
             <div class="d-flex flex-column  justify-content-center  align-items-center section2">
                 <p class="m-0 pb-lg-0 py-2">ABOUT US</p>
-                <h2 class="pb-lg-3 pb-lg-5 pb-2">LEARN MORE <span class="text-danger">ABOUT US</span></h2>
+                <h2 class="pb-lg-3 pb-lg-5 pb-2 fonttime">LEARN MORE <span class="text-danger">ABOUT US</span></h2>
                 <div class="d-flex flex-column flex-lg-row  sectionChild">
                     <div class="section2BgImage  position-relative d-flex flex-column align-items-center">
                         <div
@@ -276,10 +278,10 @@
         </section>
 
         <!-- * section 5-->
-        <section class="d-flex justify-content-center pt-5 pb-5">
+        <section id="menu" class="d-flex justify-content-center pt-5 pb-5">
             <div class="section4">
-                <p class="text-center">OUR MENU</p>
-                <h4 class="text-center">CHECK OUR <span class="text-danger">YUMMY MENU</span></h4>
+                <p class="text-center ">OUR MENU</p>
+                <h2 class="text-center fonttime">CHECK OUR <span class="text-danger">YUMMY MENU</span></h2>
                 <div class="text-center">
                     <button id="0"
                         class="menuBotton bg-transparent border-bottom border-0 border-black mx-2 fs-5">Starters</button>
@@ -461,7 +463,11 @@
             </div>
         </section>
         <!-- * section 6 :carousel-->
-        <section>
+        <section id="events">
+            <div class="d-flex flex-column align-itemscenter text-center w-100 bg-body-secondary ">
+                <p class="pt-5 m-0">TETIMONIAL</p>
+                <h2 class="fonttime">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span></h2>
+            </div>
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -477,8 +483,6 @@
                 <div class="carousel-inner bg-body-secondary">
                     <div class="carousel-item active pb-5">
                         <div class="d-flex flex-column align-items-center py-5">
-                            <p class="pt-5 m-0">TETIMONIAL</p>
-                            <h2 class="pb-5">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span></h2>
                             <div class="d-flex  flex-column flex-lg-row align-items-center justify-content-center">
                                 <div
                                     class="d-flex flex-column flex-lg-row w-50 border border-3 border-bottom-0 border-top-0 border-end-0 border-start border-danger ps-4 ">
@@ -507,8 +511,6 @@
                     </div>
                     <div class="carousel-item pb-5">
                         <div class="d-flex flex-column align-items-center py-5">
-                            <p class="pt-5 m-0">TETIMONIAL</p>
-                            <h2 class="pb-5">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span></h2>
                             <div class="d-flex  flex-column flex-lg-row align-items-center justify-content-center">
                                 <div
                                     class="d-flex flex-column flex-lg-row w-50 border border-3 border-bottom-0 border-top-0 border-end-0 border-start border-danger ps-4 ">
@@ -537,8 +539,6 @@
                     </div>
                     <div class="carousel-item pb-5">
                         <div class="d-flex flex-column align-items-center py-5">
-                            <p class="pt-5 m-0">TETIMONIAL</p>
-                            <h2 class="pb-5">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span></h2>
                             <div class="d-flex  flex-column flex-lg-row align-items-center justify-content-center">
                                 <div
                                     class="d-flex flex-column flex-lg-row w-50 border border-3 border-bottom-0 border-top-0 border-end-0 border-start border-danger ps-4 ">
@@ -567,8 +567,6 @@
                     </div>
                     <div class="carousel-item pb-5">
                         <div class="d-flex flex-column align-items-center py-5">
-                            <p class="pt-5 m-0">TETIMONIAL</p>
-                            <h2 class="pb-5">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span></h2>
                             <div class="d-flex  flex-column flex-lg-row align-items-center justify-content-center">
                                 <div
                                     class="d-flex flex-column flex-lg-row w-50 border border-3 border-bottom-0 border-top-0 border-end-0 border-start border-danger ps-4 ">
@@ -609,13 +607,13 @@
             </div>
         </section>
         <!-- * section 7 :carousel-->
-        <section class="py-5 text-center">
+        <section class="py-5 text-center border border-black">
             <h1>section 7 carousel</h1>
         </section>
         <!-- * section 8-->
-        <section class="d-flex  flex-column  align-items-center  bg-body-secondary pt-5 pb-5">
+        <section id="chefs" class="d-flex  flex-column  align-items-center  bg-body-secondary pt-5 pb-5">
             <p class="m-0">CHEFS</p>
-            <h2 class="pt-2 pb-4">OUR <span class="text-danger">PROFFESIONAL</span> CHEFS</h2>
+            <h2 class="pt-2 pb-4 fonttime">OUR <span class="text-danger">PROFFESIONAL</span> CHEFS</h2>
             <div class="d-flex flex-column flex-lg-row gap-lg-5">
                 <div class="card" style="width: 22rem; height: 33rem;">
                     <div class="card-img-top section81Child1 position-relative" alt="...">
@@ -679,7 +677,7 @@
         <!-- * section 9-->
         <section class="d-flex flex-column align-items-center pt-5 pb-5">
             <p class="m-0 text-body-secondary">BOOK A TABLE</p>
-            <h2 class="pt-2 pb-4">book <span class="text-danger">your stay</span> with us</h2>
+            <h2 class="pt-2 pb-4 fonttime">book <span class="text-danger">your stay</span> with us</h2>
             <div class="bg-body-secondary  section8Child d-flex flex-column flex-lg-row">
                 <img src="./public/images/reservation.jpg" alt="">
                 <div class="d-flex  section9inputGrp flex-wrap   justify-content-evenly gap-lg-1 align-items-center ">
@@ -700,13 +698,14 @@
 
         </section>
         <!-- * section 10 :carousel-->
-        <section>
+        <section class="py-5 text-center border border-black">
+            <h1>section 10 carousel</h1>
         </section>
         <!-- * section 11-->
-        <section class="d-flex justify-content-center pt-5 pb-5">
+        <section id="contact" class="d-flex justify-content-center pt-5 pb-5">
             <div class="d-flex  flex-column  align-items-center  section11 gap-4">
                 <p class="m-0">CONTACT</p>
-                <h2 class="pt-2 pb-4">NEED HELP? <span class="text-danger">CONTACT US</span></h2>
+                <h2 class="pt-2 pb-4 fonttime">NEED HELP? <span class="text-danger">CONTACT US</span></h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1404.0844898072974!2d-7.53617568194666!3d33.603434353129444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cdb2f812837f%3A0xbbcfc74fbc11b2d9!2sLionsGeek!5e1!3m2!1sfr!2sma!4v1705573622763!5m2!1sfr!2sma"
                     class="w-100" height="300" style="border:0;" allowfullscreen="" loading="lazy"

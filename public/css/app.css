@@ -1,10 +1,14 @@
 @charset "UTF-8";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@font-face {
+  font-family: "achraf";
+  src: url(../fonts/ShadowsIntoLight-Regular.ttf);
+}
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11978,6 +11982,10 @@ textarea.form-control-lg {
   100% {
     box-shadow: 0 0 0 45px rgba(193, 244, 246, 0);
   }
+}
+
+.fonttime {
+  font-family: achraf;
 }
 
 .section3 {

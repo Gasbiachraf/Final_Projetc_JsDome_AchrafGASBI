@@ -3,26 +3,27 @@
 let sectionVideo = document.querySelectorAll('.section1Video')
 let divVideo = document.querySelector('#divVideo')
 let boddy = document.querySelector('body')
-
-
+let video1 = document.querySelector('.sectionVideo iframe')
 sectionVideo.forEach(element => {
     element.addEventListener('click' ,()=>{
         divVideo.classList.toggle('d-none')
         boddy.classList.toggle('body')
+        let iframeSrc = video1.src
+        video1.src = iframeSrc
         
     })
 });
 
-//^ video section 
+//^ video section 2
 let sectionVideo2 = document.querySelectorAll('.section1Video2')
 let divVideo2 = document.querySelector('#divVideo2')
 let boddy2 = document.querySelector('body')
-
-
+let video2 = document.querySelector('.sectionVideo2 iframe')
 sectionVideo2.forEach(element => {
     element.addEventListener('click' ,()=>{
         divVideo2.classList.toggle('d-none')
-        
+        let iframeSrc = video2.src
+        video2.src = iframeSrc
         
     })
 });
